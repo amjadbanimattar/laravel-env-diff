@@ -1,0 +1,14 @@
+{
+    "include": [
+        "src",
+        "config"
+    ],
+    "scripts": {
+        "lint": {
+            "PHP Version": ["php", "-v"],
+            "PHPStan Version": ["./vendor/bin/phpstan", "-V"],
+            "PHPStan": ["./vendor/bin/phpstan", "analyse"],
+            "Laravel Pint": ["./vendor/bin/pint"]
+        }
+    }
+}

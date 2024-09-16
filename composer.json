@@ -1,0 +1,54 @@
+{
+    "name": "amjadbm/laravel-env-diff",
+    "description": "Create a visual Diff of .env and .env.example files",
+    "type": "library",
+    "license": "Amjad BaniMattar",
+    "authors": [
+        {
+            "name": "Amjad BaniMattar",
+            "email": "amjad.banimatter@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/console": "^8.0|^9.0|^10.0|^11.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0",
+        "symfony/console": "^4.0|^5.0|^6.0",
+        "vlucas/phpdotenv": "^4.0|^5.6",
+        "wujunze/php-cli-color": "^2.4"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "illuminate/testing": "^8.0|^9.0|^10.0|^11.0",
+        "laravel/pint": "^1.10",
+        "mockery/mockery": "^1.3.2",
+        "larastan/larastan": "^2.9.8",
+        "orchestra/testbench": ">=3.8",
+        "phpstan/phpstan": "^0.12.99|^1.0",
+        "phpunit/phpunit": "^8.0|^9.6",
+        "tightenco/duster": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "AmjadBM\\EnvDiff\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AmjadBM\\EnvDiff\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AmjadBM\\EnvDiff\\Providers\\EnvDiffProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

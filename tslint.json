@@ -1,0 +1,5 @@
+{
+    "preset": "laravel",
+    "disabled": ["ArrayParametersOverViewWith"],
+    "excluded": ["tests/", "config/"]
+}
