@@ -3,7 +3,7 @@
     "description": "Create a visual Diff of .env and .env.example files",
     "version": "1.0.0",
     "type": "library",
-    "license": "Amjad BaniMattar",
+    "license": "MIT",
     "authors": [
         {
             "name": "Amjad BaniMattar",
